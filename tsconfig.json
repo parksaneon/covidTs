@@ -5,7 +5,7 @@
     "outDir": "./built", // 타입 스크릷트의 결과물이 들어갈 경로
     "moduleResolution": "Node",
     "lib": ["ES2015", "DOM", "DOM.Iterable"], // Promise와 Dom관련 에러 발생 X
-    "noImplicitAny": true
+    "noImplicitAny": true // ts 코드를 점진적으로 추가
   },
   "include": ["./src/**/*"]
 }
