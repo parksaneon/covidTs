@@ -10,9 +10,14 @@
 
 ## js 프로젝트에 ts 적용하기
 
-- ts 기본 환경 구성
-  - npm 초기화
-  - ts 설치
-  - ts 설정 파일 생성 및 기본 값 추가
-  - js 파일을 ts 파일로 변환
-  - tsc 명령어로 ts 컴파일 하기
+1. ts 기본 환경 구성
+
+- npm 초기화
+- ts 설치
+- ts 설정 파일 생성 및 기본 값 추가
+- js 파일을 ts 파일로 변환
+- tsc 명령어로 ts 컴파일 하기
+
+2. 명시적인 'any' 선언
+
+- 'tsconfig.json' 파일에 'noImplicitAny' 값을 'true'로 추가
