@@ -4,7 +4,7 @@
     "target": "ES3",
     "outDir": "./built", // 타입 스크릷트의 결과물이 들어갈 경로
     "moduleResolution": "Node",
-    "lib": ["ES2015", "DOM", "DOM.Iterable"]
+    "lib": ["ES2015", "DOM", "DOM.Iterable"] // Promise와 Dom관련 에러 발생 X
   },
   "include": ["./src/**/*"]
 }
