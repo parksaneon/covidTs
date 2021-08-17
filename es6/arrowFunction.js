@@ -17,6 +17,6 @@ var sum = (a, b) => {
 var sum = (a, b) => a + b;
 
 // ts 화살표 함수 타이핑
-var sum = (a: number, b: number): number => {
-  return a + b;
-};
+// var sum = (a: number, b: number): number => {
+//   return a + b;
+// };
