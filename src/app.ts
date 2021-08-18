@@ -5,11 +5,10 @@ function $(selector: string) {
 function getUnixTimestamp(date: Date) {
   return new Date(date).getTime();
 }
-
 // DOM
 // Element -> HTMLElement -> HTMLParagraphement
 const confirmedTotal = $('.confirmed-total') as HTMLSpanElement;
-const deathsTotal: = $('.deaths') as HTMLParagraphElement;
+const deathsTotal = $('.deaths') as HTMLParagraphElement;
 const recoveredTotal = $('.recovered') as HTMLParagraphElement;
 const lastUpdatedTime = $('.last-updated-time') as HTMLParagraphElement;
 const rankList = $('.rank-list');
