@@ -1,3 +1,9 @@
+// import '변수명' from '라이브러리 이름' - 라이브러리 로딩
+// import {'변수명'} from '파일 상대 경로' - 변수, 함수 import 문법
+import axios from 'axios';
+import Chart from 'chart.js';
+
+
 // utils
 function $(selector: string) {
   return document.querySelector(selector);
