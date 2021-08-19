@@ -1,8 +1,9 @@
 // import '변수명' from '라이브러리 이름' - 라이브러리 로딩
 // import {'변수명'} from '파일 상대 경로' - 변수, 함수 import 문법
-import axios from 'axios';
-import Chart from 'chart.js';
-
+import axios, { AxiosResponse } from 'axios';
+import * as Chart from 'chart.js';
+// 타입 모듈
+import { CovidSummaryResPonse } from './covid';
 
 // utils
 function $(selector: string) {
@@ -42,8 +43,9 @@ function createSpinnerElement(id: string) {
 let isDeathLoading = false;
 let isRecoveredLoading = false;
 
+
 // api
-function fetchCovidSummary() {
+function fetchCovidSummary(): Promise<AxiosResponse<CovidSummaryResPonse>> {
   const url = 'https://api.covid19api.com/summary';
   return axios.get(url);
 }
@@ -60,6 +62,7 @@ function fetchCountryInfo(countryCode: string, status: CovidStatus) {
   const url = `https://api.covid19api.com/country/${countryCode}/status/${status}`;
   return axios.get(url);
 }
+
 
 // methods
 function startApp() {
