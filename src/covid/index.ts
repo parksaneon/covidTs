@@ -22,9 +22,26 @@ interface Global {
   TotalRecovered: number;
 }
 
-export interface CovidSummaryResPonse {
+export interface CovidSummaryResponse {
   Countries: Countries[];
   Date: string;
   Global: Global;
   Message: string;
 }
+
+interface CountrySummaryInfo {
+  Country: string;
+  CountryCode: string;
+  Date: string;
+  ID: string;
+  NewConfirmed: number;
+  NewDeaths: number;
+  NewRecovered: number;
+  Premium: any;
+  Slug: string;
+  TotalConfirmed: number;
+  TotalDeaths: number;
+  TotalRecovered: number;
+}
+
+export type CountrySummaryResponse = CountrySummaryInfo[];
