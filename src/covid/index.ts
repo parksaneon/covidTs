@@ -1,5 +1,5 @@
 // 타입들을 묶어놓은 하나의 파일
-interface Countries {
+export interface Country {
   Country: string;
   CountryCode: string;
   Date: string;
@@ -23,7 +23,7 @@ interface Global {
 }
 
 export interface CovidSummaryResponse {
-  Countries: Countries[];
+  Countries: Country[];
   Date: string;
   Global: Global;
   Message: string;
